@@ -1,0 +1,17 @@
+<div class="users-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+        <h1 class="text-center text-white">Comments</h1>
+        <%= form_for @comments do |f| %>
+          <div class="form-group">
+            <%= f.label :comments, class: 'text-white' %>
+            <%= f.text_field :comments, class: 'form-controller' %>
+          </div>
+
+          <%= f.submit "コメント投稿", class: 'btn-block btn-white' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
